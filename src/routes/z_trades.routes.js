@@ -5,7 +5,7 @@ import {getz_trades} from "../controller/z_trades.controller.js";
 //se crea el enrutador
 const  router = Router();
 
-router.get('/ping', getz_trades  );
+router.get('/transacciones', getz_trades  );
 
 
 export default router

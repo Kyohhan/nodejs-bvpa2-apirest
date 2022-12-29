@@ -10,7 +10,7 @@ export const getz_trades =  async (req,res) => {
 
     }catch (error) {
         return res.status(500).json({
-            message: "algo resulto mal "
+            message: "algo  z resulto mal "
         })
     }
 
