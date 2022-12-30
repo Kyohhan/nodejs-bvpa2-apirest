@@ -5,12 +5,14 @@ export const listarUsuarios =  async (req,res) => {
     try {
         //const query="CALL `sp_ef_listarUsuarios`()";
         const query="select *from usuarios";
-        const [result] = await pool_efdb.query(query);
+        const [result] = await pool_efdb.query(query,
+
+        );
         res.json(result);
 
     }catch (error){
         return res.status(500).json({
-            message: "algo resulto mal en listarUsuarios"
+            message: error
         })
     }
 }
