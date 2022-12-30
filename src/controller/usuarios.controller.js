@@ -4,7 +4,7 @@ export const listarUsuarios =  async (req,res) => {
 
     try {
         //const query="CALL `sp_ef_listarUsuarios`()";
-        const query="select *from usuarios;";
+        const query="select *from usuarios";
         const [result] = await pool_efdb.query(query);
         res.json(result);
 
