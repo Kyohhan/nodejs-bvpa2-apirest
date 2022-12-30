@@ -10,7 +10,7 @@ export const listarUsuarios =  async (req,res) => {
 
     }catch (error){
         return res.status(500).json({
-            message: "algo resulto mal "
+            message: "algo resulto mal en listarUsuarios"
         })
     }
 }
